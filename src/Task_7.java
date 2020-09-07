@@ -1,27 +1,32 @@
 import java.util.Scanner;
-public class Task_7
-{
-    public static void main (String[]args){
+
+public class Task_7 {
+    public static void main(String[] args) {
         System.out.println("Введите, пожалуйста, код города");
-        Scanner custom_value = new Scanner(System.in);
-        if (custom_value.hasNextInt()) {
-            int number = custom_value.nextInt();
+        Scanner customValue = new Scanner(System.in);
+        if (customValue.hasNextInt()) {
+            int number = customValue.nextInt();
+            float cost;
             switch (number) {
 
                 case 905:
-                    System.out.println("Моска (905) 41,5");
+                    cost = 4.15f;
+                    System.out.println("Моска (905) " + cost * 10);
                     break;
 
                 case 194:
-                    System.out.println("Ростов (194) 19,8");
+                    cost = 1.98f;
+                    System.out.println("Ростов (194) " + cost * 10);
                     break;
 
                 case 491:
-                    System.out.println("Краснодар (491) 26,9");
+                    cost = 2.69f;
+                    System.out.println("Краснодар (491) " + cost * 10);
                     break;
 
                 case 800:
-                    System.out.println("Киров (800) 50,0");
+                    cost = 0.5f;
+                    System.out.println("Киров (800) " + cost * 10);
                     break;
 
                 default:
